@@ -70,14 +70,24 @@ If you just want to use the pre trained RNN models to interact with the chatbots
 ## Running the Projects:
 Each folder in our repository is a separate project. Following are the steps to run each project.
 
-### Translate:
-#### Steps:
-1. Download the Project.
-2. For training, run the command: python Translate.py in the command prompt in a python 3.5 environment which has tensor flow installed.
-3. For chatting with the trained model, run the command python Translate.py --decode in a python 3.5 environment which has tensor flow installed.
-
 ### English to German Translations:
 #### Steps:
+1. Download the repository and open the folder 'English to German Translations' in Command Prompt/Terminal. 
+2. For Training : run the command "python translate.py" -  this will start training the model on the files present in English to German Translation\temp\eng-german. There are four files : train.en (english translations), train.en1 (german translations) , test.en (test file - english translations), test.en1 (test file - german translations). As the training proceeds, all the training related files are maintained in the same folder.
+3. For Testing : run the command "python translate.py --decode" - this will use the trained model (fetch the last saved checkpoint model) and once the model is loaded , the user will see ">" where the user can enter english lines to get the german translation.
+4. For using the UI: run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot.
 
-###  English to English Conversations
+###  English to English Conversations:
 #### Steps:
+1. Download the repository and open the folder 'English to English Conversations' in Command Prompt/Terminal. 
+2. For Training : run the command "python translate.py" -  this will start training the model on the files present in English to English Conversation\temp\eng-eng. There are four files : train.en (english movie conversation-part1), train.en1 (english movie conversation-part2) , test.en (test file - english movie conversation-part1), test.en1 (test file - english movie conversation-part2). As the training proceeds, all the training related files are maintained in the same folder.
+3. For Testing : run the command "python translate.py --decode" - this will use the trained model (fetch the last saved checkpoint model) and once the model is loaded , the user will see ">" where the user can enter movie dialogues to get the reply as some other movie dialogues.
+4. For using the UI: run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot.
+
+### Training your own data set:
+
+1. Download the repository and copy any one folder: English to English or English or English to German and rename it to your choice.
+2. Now in order to train your own files, you must have for files - train.en, train.en1, test.en, test.en1 (the extensions are given by our choice, so you can rename ur files with these extensions in order to run the code smoothly). train.en - is the encoder file and train.en1- is the decoder file.
+3. Prepare your dataset (the above four files) and create a new folder in temp (ex: eng-eng in English to English Translation). Copy the training and test files in this new folder.
+4. Copy the folder name and open translate.py. Repalce dataTrainDir parameter defined in train(), decode() to your folder name in present in temp.
+5. Once the folder is renamed and files are present in the new folder, you follow the same steps as mentioned above for training and testing.
