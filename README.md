@@ -66,3 +66,4 @@ If you just want to use the pre trained RNN models to interact with the chatbots
 1. Download the Project.
 2. For training, run the command: python Translate.py in the command prompt in a python 3.5 environment which has tensor flow installed.
 3. For chatting with the trained model, run the command python Translate.py --decode in a python 3.5 environment which has tensor flow installed.
+
