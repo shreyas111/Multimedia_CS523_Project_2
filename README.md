@@ -30,3 +30,10 @@ in the style of movie dialog corpus. There is a UI which the user can use to cha
 ## Creating A Tensor Flow Environment to Run the Projects:
 Steps:
 We have run the projects on python 3.5 so we recommend to run on python 3.5 enviornment.
+
+## Running the Projects:
+### Translate:
+#### Steps:
+1. Download the Project.
+2. For training, run the command: python Translate.py in the command prompt in a python environment which has tensor flow installed.
+3. For chatting with the trained model, run the command python Translate.py --decode in a python environment which has tensor flow installed.
