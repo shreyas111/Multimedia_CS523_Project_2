@@ -16,7 +16,16 @@ As a part of this project we had an option to implement a recurrent neural netwo
 We decided to implement the option 2 of developing a Chat bot using RNN (Recurrent Neural Network) in Tensor Flow. 
 We searched for multiple repositories which we could modify to develop the chat bot which outputs data in our own style.
 
-## Our repository has the following three folders:
+## Original Repositories:
+Following are the original repositories:
+
+1.	https://github.com/b0noI/dialog_converter/tree/simaple_input_generator (Repository 1)
+2.	https://github.com/b0noI/tensorflow/tree/r0.11/tensorflow/models/rnn/translate
+
+For more explaination about the original repositories and the process we followed to create our own chat bots and our repository by modifying some code from these original repositories please take a look at the word document <b>'CS 523 Project2.docx'</b> which is can be found in the root folder.  
+
+## Our Repository 
+Our repository has been creaded by modifying and using the code present in the original repositories. Our repository has the following three folders:
 ### 1. Translate (Without UI): 
 This folder contains code for a chatbot which gives output for English sentences in the style of movie dialog 
 corpus. There is no UI for this project which the user can use to chat.
