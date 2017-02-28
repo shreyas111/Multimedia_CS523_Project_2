@@ -24,7 +24,7 @@ Following are the original repositories:
 
 For more explaination about the original repositories and the process we followed to create our own chat bots and our repository by modifying some code from these original repositories please take a look at the word document <b>'CS 523 Project2.docx'</b> which is can be found in the root folder.  
 
-## Our Repository 
+## Our Repository: 
 Our repository has been creaded by modifying and using the code present in the original repositories. Our repository has the following three folders:
 ### 1. Translate (Without UI): 
 This folder contains code for a chatbot which gives output for English sentences in the style of movie dialog 
@@ -70,9 +70,16 @@ If you just want to use the pre trained RNN models to interact with the chatbots
 
 
 ## Running the Projects:
+Each folder in our repository is a separate project. Following are the steps to rrun each project.
+
 ### Translate:
 #### Steps:
 1. Download the Project.
 2. For training, run the command: python Translate.py in the command prompt in a python 3.5 environment which has tensor flow installed.
 3. For chatting with the trained model, run the command python Translate.py --decode in a python 3.5 environment which has tensor flow installed.
 
+### English to German Translations:
+#### Steps:
+
+###  English to English Conversations
+#### Steps:
