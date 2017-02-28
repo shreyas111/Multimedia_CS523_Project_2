@@ -21,6 +21,7 @@ Following are the original repositories:
 
 1.	https://github.com/b0noI/dialog_converter/tree/simaple_input_generator (Repository 1)
 2.	https://github.com/b0noI/tensorflow/tree/r0.11/tensorflow/models/rnn/translate
+3.  https://github.com/suriyadeepan/easy_seq2seq/tree/master/ui
 
 For more explaination about the original repositories, the process we followed to create our own chat bots and our repository by modifying some code from these original repositories please take a look at the word document <b>'CS 523 Project2.docx'</b> which can be found in the root folder.  
 
