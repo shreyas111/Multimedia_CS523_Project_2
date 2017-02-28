@@ -22,17 +22,15 @@ Following are the original repositories:
 1.	https://github.com/b0noI/dialog_converter/tree/simaple_input_generator (Repository 1)
 2.	https://github.com/b0noI/tensorflow/tree/r0.11/tensorflow/models/rnn/translate
 
-For more explaination about the original repositories and the process we followed to create our own chat bots and our repository by modifying some code from these original repositories please take a look at the word document <b>'CS 523 Project2.docx'</b> which is can be found in the root folder.  
+For more explaination about the original repositories, the process we followed to create our own chat bots and our repository by modifying some code from these original repositories please take a look at the word document <b>'CS 523 Project2.docx'</b> which can be found in the root folder.  
 
 ## Our Repository: 
-Our repository has been creaded by modifying and using the code present in the original repositories. Our repository has the following three folders:
-### 1. Translate (Without UI): 
-This folder contains code for a chatbot which gives output for English sentences in the style of movie dialog 
-corpus. There is no UI for this project which the user can use to chat.
-### 2. English to German Translations (With UI) : 
+Our repository has been creaded by modifying and using the code present in the original repositories. Our repository has the following  folders:
+.
+### 1. English to German Translations (With UI) : 
 This folder contains code for a chatbot which translates English sentences to 
 German sentences.
-### 3. English to English Conversations (With UI): 
+### 2. English to English Conversations (With UI): 
 This folder contains contains code for a chatbot which gives output for English sentences 
 in the style of movie dialog corpus. There is a UI which the user can use to chat with the chat bot.
 
@@ -70,7 +68,7 @@ If you just want to use the pre trained RNN models to interact with the chatbots
 
 
 ## Running the Projects:
-Each folder in our repository is a separate project. Following are the steps to rrun each project.
+Each folder in our repository is a separate project. Following are the steps to run each project.
 
 ### Translate:
 #### Steps:
