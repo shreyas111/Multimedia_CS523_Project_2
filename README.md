@@ -86,7 +86,7 @@ Each folder in our repository is a separate project. Following are the steps to 
 4. For using the UI: run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot.
 
 ### Training your own data set:
-
+### Steps:
 1. Download the repository and copy any one folder: English to English or English or English to German and rename it to your choice.
 2. Now in order to train your own files, you must have for files - train.en, train.en1, test.en, test.en1 (the extensions are given by our choice, so you can rename ur files with these extensions in order to run the code smoothly). train.en - is the encoder file and train.en1- is the decoder file.
 3. Prepare your dataset (the above four files) and create a new folder in temp (ex: eng-eng in English to English Translation). Copy the training and test files in this new folder.
