@@ -1,13 +1,13 @@
 # Multimedia_CS523_Project_2
 
-This repository is created as a deliverable for Project 2 in CS-523 (Spring 2017) offered at University of Illinois at Chicago.
+This repository is created as a deliverable for Project 2 for CS-523 course offered in Spring 2017 at University of Illinois at Chicago.
 
 ## Project Members:
 1. Kruti Sharma
 2. Hengbin Li
 3. Shreyas Kulkarni
 
-As a part of this project we had an option to implement a recurrent neural network for any of the following options usin tensor flow.
+As a part of this project we had an option to implement a recurrent neural network for any of the following options using tensor flow.
 
 1. Develop an RNN that can generate a story/poem/lyrics/articles in the style of an author or genre of your choice.
 2. Develop a chatbot using an RNN that responds in the style of a particular user group or user.
@@ -28,28 +28,27 @@ This folder contains contains code for a chatbot which gives output for English 
 in the style of movie dialog corpus. There is a UI which the user can use to chat with the chat bot.
 
 ## Creating A Tensor Flow Environment to Run the Projects in Anaconda:
-Steps:
-We have run the projects on python 3.5 so we recommend to run on python 3.5 enviornment.
-After installing [Anaconda](https://www.continuum.io/downloads), you should create a [conda environment](http://conda.pydata.org/docs/using/envs.html)
-so you do not destroy your main installation in case you make a mistake somewhere:
+### Steps:
+1. We have run the projects on python 3.5 so we recommend to run on python 3.5 enviornment.
+2. After installing [Anaconda](https://www.continuum.io/downloads), you should create a [conda environment](http://conda.pydata.org/docs/using/envs.html) so you do not destroy your main installation in case you make a mistake somewhere:
 
     conda create --name tf python=3.5
 
-Now you can switch to the new environment by running the following (on Linux):
+3. Now you can switch to the new environment by running the following on Linux:
+    
+    source activate tf                                             
+    
 
-    source activate tf
-
-Some of these tutorials use [scikit-learn](http://scikit-learn.org/stable/install.html)
-which can be installed in your new conda environment as follows. This also installs
-NumPy and other dependencies:
+4. Some of these tutorials use [scikit-learn](http://scikit-learn.org/stable/install.html) which can be installed in your new conda environment as follows. This also installs NumPy and other dependencies:
 
     conda install scikit-learn
 
-You may also need to install other dependencies, such as:
+5. You may also need to install other dependencies, such as:
 
     conda install jupyter matplotlib scipy pillow
 
-Now you have to install TensorFlow. In order to train the model on your own it is recomended to install a GPU version of Tensor Flow.
+6. Innstall TensorFlow. 
+In order to train the model on your own it is recomended to install a GPU version of Tensor Flow.
 To run the GPU version of Tensor Flow you will need a NVIDIA GPU with a compute capability of 3.0 or aboove. To find a list of GPU's 
 which are can be used to run GPU version on Tensor Flow visit the following link: https://developer.nvidia.com/cuda-gpus. It is much more complicated to install the GPU-version because you also need various NVIDIA drivers.
 That is not described here.
@@ -65,5 +64,5 @@ If you just want to use the pre trained RNN models to interact with the chatbots
 ### Translate:
 #### Steps:
 1. Download the Project.
-2. For training, run the command: python Translate.py in the command prompt in a python environment which has tensor flow installed.
-3. For chatting with the trained model, run the command python Translate.py --decode in a python environment which has tensor flow installed.
+2. For training, run the command: python Translate.py in the command prompt in a python 3.5 environment which has tensor flow installed.
+3. For chatting with the trained model, run the command python Translate.py --decode in a python 3.5 environment which has tensor flow installed.
