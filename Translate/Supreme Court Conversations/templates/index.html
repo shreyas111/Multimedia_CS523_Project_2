@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>@Let's Chat</title>
+		<style>
+		
+		/*--------------------
+		Custom Srollbar
+		--------------------*/
+		.mCSB_scrollTools {
+		  margin: 1px -3px 1px 0;
+		  opacity: 0;
+		}
+
+		.mCSB_inside > .mCSB_container {
+			left:25%
+			top:100px;
+            width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			background-color:white;
+			box-sizing: border-box;  border: 2px solid red;
+			border-radius: 4px;
+			height:300px;
+			overflow:scroll;
+			
+		}
+		
+		.mCSB_container {
+			overflow:scroll;
+			position:relative;
+			height:300px;
+		}
+
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		  background-color: rgba(0, 0, 0, 0.5) !important;
+		}
+       
+
+        h2{
+            text-align:center;
+			position: relative;
+			
+        }
+
+        input[type=text] {
+			left:25%
+            width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;  border: 2px solid red;
+			border-radius: 4px;
+		}
+		textarea {
+			left:25%
+            width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;  border: 2px solid red;
+			border-radius: 4px;
+		}
+		
+		.pure-button{
+		 background-color:#FFFFFF;
+		 border-color:black;
+		 
+		}
+		
+		.messages .message.new {
+		  -webkit-transform: scale(0);
+				  transform: scale(0);
+		  -webkit-transform-origin: 0 0;
+				  transform-origin: 0 0;
+		  -webkit-animation: bounce 500ms linear both;
+				  animation: bounce 500ms linear both;
+		}
+		
+		.messages .message.new1 {
+		  -webkit-transform: scale(0);
+				  transform: scale(0);
+		  -webkit-transform-origin: 0 0;
+				  transform-origin: 0 0;
+		  -webkit-animation: bounce 500ms linear both;
+				  animation: bounce 500ms linear both;
+			position:right;
+		}
+		</style>
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'> 
+		<script src="../static/js/jquery-latest.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+		<style>
+		 body{
+			<!--background-image: url('FriendsVintage.jpg');-->
+            font-family: verdana;
+            font-color:#fff;
+            padding:10px;
+        }
+		
+		</style>
+	</head>
+
+<body id="page_body" background="../static/res/justice.jpg">
+<!--<body id="page_body" bgcolor="#e8f0ff" > -->
+
+
+<h2>Chat Bot</h2> 
+<br/>
+<br/>
+<br/>
+
+<div class="pure-g">
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+<div class="messages-content" style="background-color:white;"></div>
+<!--<textarea id="txtarea"></textarea>-->
+</div>
+<div class="pure-u-1-5"></div>
+</div>
+
+<!--<textarea type="text" class="message-input" placeholder="Enter Message"></textarea>-->
+<div class="pure-g">
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+<input id="inputtext" type="text" style="width:100%" placeholder="Enter Court Conversations....."/>
+</div>
+
+<div class="pure-u-1-5"></div>
+</div>
+<div class="pure-g">
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5" style="padding-left:540px;">
+	 <button type="submit" id="chat" class="button-success pure-button" style="background-color:#4CAF50 ; width:200px; border-color:black; border:2px;">Send</button>
+	
+</div>
+<div class="pure-u-1-5"></div>
+
+
+<script src='../static/js/jquery.min.js'></script>
+<script src='../static/js/jquery.mCustomScrollbar.concat.min.js'></script> 
+<script src="../static/js/index.js"></script>
+</div>
+</body>
+</html>
