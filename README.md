@@ -68,7 +68,14 @@ If you just want to use the pre trained RNN models to interact with the chatbots
 
     pip install tensorflow prettytensor
     or
-    pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.0.0-cp35-cp35m-    win_x86_64.whl 
+    pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.0.0-cp35-cp35m-    win_x86_64.whl.
+    
+7. Install Flask
+In order to run the UI, flask needs to be installed. You can install flask either using pip or if you are using anaconda enviroment, use the below the commands:
+
+    Using Anaconda: conda install -c anaconda flask=0.12
+    or
+    pip install flask=0.12
 
 
 ## Running the Projects:
@@ -77,16 +84,19 @@ The folders English to German Translations and English to English Conversations 
 ### English to German Translations:
 #### Steps:
 1. Download the repository and open the folder 'English to German Translations' in Command Prompt/Terminal. 
-2. For Training the model, run the command "python translate.py" -  Running this command will start training the model on the training data files present in English to German Translation\temp\eng-german folder. This folder contains 4 files which are as follows: train.en (english sentences userd for training), train.en1 (German sentence translations of the English sentences used for training) , test.en (English sentences used for testing), test.en1 (German sentence translations of the English sentences used for testing). As the training proceeds the program will save all the training related files all in the same folder.
-3. For Testing the model with your won senteneces, run the following command "python translate.py --decode" - Running this command will use the trained model (fetch the last saved checkpoint of the model) and once the model is loaded , the user will see ">" where the user can enter english lines to get the german translation.
-4. For using the UI: run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot.
+2. Download the training data set from http://www.statmt.org/wmt15/translation-task.html - Europarl v7 training data set contains two files. After downloading, extract and rename the english file (one with .en extension) to train.en and the german file (with .de extension) to train.en1. Copy and paste the files in temp\eng-german folder.
+3. For Training the model, run the command "python translate.py" -  Running this command will start training the model on the training data files present in English to German Translation\temp\eng-german folder. This folder contains 4 files which are as follows: train.en (english sentences userd for training), train.en1 (German sentence translations of the English sentences used for training) , test.en (English sentences used for testing), test.en1 (German sentence translations of the English sentences used for testing). As the training proceeds the program will save all the training related files all in the same folder. 
+4. Since the pre-trained model is too large to upload on GitHub, you would need to train the model before executing.
+5. For executing the model with your own senteneces, run the command "python translate.py --decode" - Running this command will use the pre-trained model (fetch the last saved checkpoint of the model) and once the model is loaded , the user will see ">" where the user can enter english lines to get the german translation.
+4. For using the UI: run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot. Run the UI after training only, since the pre-trained model is too large to upload on github.
 
 ###  English to English Conversations:
 #### Steps:
 1. Download the repository and open the folder 'English to English Conversations' in Command Prompt/Terminal. 
 2. For Training the model, run the command "python translate.py" - Running this will start training the model on the files present in English to English Conversation\temp\eng-eng. This folder contains 4 files which are as follows: train.en (english movie conversation used for training), train.en1 (english movie conversation replies to the training sentences) , test.en (english movie conversation used for testing), test.en1 (English movie conversation replies to the testing sentences). As the training proceeds, all the training related files will be saved in the same folder.
-3. For Testing the model with your own sentences, run the command "python translate.py --decode" - this will use the trained model (fetch the last saved checkpoint of the model) and once the model is loaded , the user will see ">" where the user can enter movie dialogues to get the reply as some other movie dialogues.
-4. For using the UI, run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot.
+3. Since the pre-trained model is too large to upload on GitHub, you would need to train the model before executing.
+4. For executing the model with your own sentences, run the command "python translate.py --decode" - this will use the trained model (fetch the last saved checkpoint of the model) and once the model is loaded , the user will see ">" where the user can enter movie dialogues to get the reply as some other movie dialogues.
+4. For using the UI, run the "python webui.py" and once the command prompt shows "Running on http://127.0.0.1/5001/" user can run this to start interacting with the chatbot. Run the UI after training only, since the pre-trained model is too large to upload on github.
 
 ### Training your own data set:
 ### Steps:
