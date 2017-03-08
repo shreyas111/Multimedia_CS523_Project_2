@@ -30,10 +30,13 @@ Our repository has been creaded by modifying and using the code present in the o
 .
 ### 1. English to German Translations (With UI) : 
 This folder contains code for a chatbot which translates English sentences to 
-German sentences. There is a UI the user can use in which the user can use for translating English sentences to German. 
+German sentences. There is a UI the user can use in which the user can use for translating English sentences to German.
+#### Youtube video link: https://youtu.be/oqhdWU7Byjs
+
 ### 2. English to English Conversations (With UI): 
 This folder contains contains code for a chatbot which gives output for English sentences 
 in the style of movie dialog corpus. There is a UI which the user can use to chat with the chat bot.
+### Youtube video link: https://youtu.be/QLBNKY_AJkU
 
 ## Creating A Tensor Flow Environment to Run the Projects in Anaconda:
 ### Steps:
